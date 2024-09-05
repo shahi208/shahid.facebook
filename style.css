@@ -1,0 +1,468 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    
+}
+ ul span {
+    text-align: calc();
+    font-size: 50px;
+    
+}
+p {
+    text-align: end;
+    font-size: 15px;
+    margin: 20px;
+
+}
+a {
+    text-decoration: none;
+}
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+ .section-title span {
+    color: crimson;
+
+}
+
+
+#hero .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease ;
+transition-property: backgruond-color,color;
+        border-radius: 300px;
+
+}
+#hero .cta:hover {
+    color: blue;
+background-color: crimson;
+}
+.brand h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: white;
+}
+.brand h1 {
+color: white;
+font-weight: 500;
+font-size: 1.8rem;
+letter-spacing: .1rem;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+#footer .social-icon {
+    display: flex;
+    margin-bottom: 30px;
+    
+}
+#footer .social-item {
+    height: 200px;
+    width: 500px;
+    margin: 0 5px;
+
+    
+}
+#footer .social-item image {
+    filter: grayscale(1);
+}
+#footer .social-item:hover img {
+    filter: grayscale(1);
+    transition: .3s ease filter;
+}
+#footer p {
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* hero section */
+#hero{
+    background-image: url(pexels-photo-1957478\ -\ Copy.jpeg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    background-repeat: no-repeat;
+}
+#hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    
+opacity: .7;
+ z-index: -1;   
+}
+#hero .hero{
+    
+    justify-content:first baseline ;
+}
+#hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    
+    animation: texr-reveal 2s ease forwards;
+    animation-delay: 1.5s;
+
+}
+#hero h1:nth-child(1){
+    animation-delay:1s ;
+}
+
+#hero h1:nth-child(2){
+    animation-delay:2s ;
+}
+#hero h1:nth-child(3){
+    animation-delay:3s ;
+}
+ 
+span{
+    color: crimson      ;
+
+}
+
+ #hero h1:nth-child(1) span{
+    
+    animation-delay: .5s;
+}
+#hero h1:nth-child(2) span{
+    animation-delay: 1.5s;
+}
+#hero h1:nth-child(3) span{
+    
+    animation-delay: .5s;
+}
+
+
+/* end hero section */
+
+/* services section */
+
+#services .services{
+     flex-direction: column;
+     text-align: center;
+     max-width: 1500px;
+     margin: 0 auto;
+     padding: 100px 0;
+     background-color:gainsboro;
+     background-size: contain;
+    
+}
+#services .section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#services .section-title span {
+    color: crimson;
+
+}
+#services .services-top p {
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+#services .service-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap ;
+}
+#services .service-item {
+    flex-basis: 80%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    background-image: url(pexels-photo-8960464.webp);
+    
+}
+ 
+/* end services section   */
+
+
+/* project section */
+#projects .projects {
+     flex-direction: column;
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 100px 0;
+     background-color:gainsboro ;
+}
+#projects .project-header h1 {
+    margin-bottom: 100px;
+
+}
+#projects .all-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#projects .project-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+#projects .project-info{
+    padding: 30px;
+    flex-basis: 50%;
+    
+    height:100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-image:linear-gradient( 60deg, #29323c 0%, #485563 100%);
+    color: white;
+
+}
+#projects .project-info h1{
+    font-size: 4rem;
+    font-weight: 500;
+}
+#projects .project-info h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 10px;
+
+
+}
+#projects .project-info p{
+    color: white;
+}
+#projects  .project-img{
+    flex-basis: 50%;
+    height: 300px;
+    overflow: auto;
+}
+
+#projects  .project-img:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: linear-gradient( rgb(241, 237, 237));
+    opacity: .7;
+
+}
+#projects .project-img img{
+    transition: .3s ease transform ;
+}
+#project .project-item:hover .project-img img {
+    transform: scale(1.1);
+}
+ /* end project section */
+
+/* ABOUT SECTION  */
+#about .about {
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    font-size: 30px;
+background-color: rgb(241, 238, 238);
+}
+#about .col-left {
+    width: 250px;
+    height: 360px;
+
+}
+#about .col_right {
+    width: 100%;
+}
+#about .col-right h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+    
+}
+#about .col-right p {   
+    margin-bottom: 20px;
+justify-content: center;
+}
+#about .col-right .cta {
+    color: black;
+    margin-bottom: 50px;
+
+}
+/* END ABOUT SECTION  */
+
+
+/* footer */
+#footer {
+    background-image: linear-gradient(60deg, #29323c 0%,#485563 100%);
+
+}
+#footer .footer {
+    min-height: 200px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#footer h2 {
+  color: black;
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: .1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+#footer .social-icon {
+    display: flex;
+    margin-bottom: 30px;
+
+}
+#footer .social-item {
+    height: 50px;
+    width: 50px;
+    margin: 0 5px;
+}
+#footer .social-icon img {
+filter: grayscale(1);
+transition: .3s ease filter;
+}
+
+#footer .social-item:hover img {
+    filter: grayscale(1);
+    transition: .3s ease filter;
+}
+#footer p {
+    color: black;
+    font-size: 1.3rem;
+}
+/* end footer section */
+
+/* key frames */
+@keyframes text-reveal-box {
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 10%;
+
+    }
+}
+@keyframes text_reveal-name {
+    100%{
+        color: wheat;
+    }
+}
+/* key frames */
+
+/* media query for tablet */
+@media only screen and (min-width:768px) {
+    .cta{
+        font-size: 2.5rem;
+        padding: 20px 60px;
+    }
+    h1.section-title {
+font-size: 6rem;
+    }
+
+
+    /* hero */
+    #hero h1 {
+        font-size: 7rem;
+    }
+
+    /* end hero */
+
+    /* service section */
+    .services .service-bottom .services {
+        flex-basis: 45%;
+    }
+    /* end services section */
+}
+
+/*  end media query for tablet */
+
+/* media query for tablet */
+@media only screen and (min-width:768) {
+    .cta {
+        font-size: 2.5rem;
+        padding: 20px 60px;
+    }
+    h1.section-title { 
+font-size: 6rem;
+    }
+    #hero h1 {
+        font-size: 7rem;
+    }
+}
+/* service section */
+.service .service-bottom .service {
+    flex-basis: 45%;
+    margin: 1.5%;
+}
+/* end service section */
+
+/* project */
+#projects .project-item {
+    flex-direction: row;
+}
+#projects .project-item:nth-child(even){
+    flex-direction: row-reverse;
+}
+#project .project-item {
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+}
+#projects .all-projects .project-info {
+    height: 100%;
+}
+#projects .all-projects .project-img {
+    height: 100%;
+}
+/* end project */
+/*  endmedia query for tablet */
